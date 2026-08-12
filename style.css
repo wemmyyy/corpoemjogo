@@ -77,8 +77,8 @@ button:hover {
     border: 2px solid #f0e9e9; 
 }
 
-ihisobre {
-padding: 430px 8px;
+.sobre{
+    padding: 50px 8px;
 }
 
 .titulo1{
@@ -94,12 +94,25 @@ padding: 430px 8px;
 }
 
 .texto-sobre{
-    display: flex;
-    align-items: center;
+    display: flex; 
     justify-content: center;
-    margin: 50px;
+    align-items: center;
+    margin: 60px;
+    font-size: 22px;
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
+.hero-ods{
+    background-color: red;
+}
+
+.titulo2{
+    display: flex;
+    justify-content: ;
+}
 @media (max-width: 768px) {
     .logo {
         font-size: 30px;
