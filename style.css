@@ -5,6 +5,10 @@ html, body {
     padding: 0; 
 } 
 
+html{
+    scroll-behavior: smooth;
+}
+
 body { 
     display: flex; 
     flex-direction: column; 
@@ -73,15 +77,32 @@ button:hover {
     border: 2px solid #f0e9e9; 
 }
 
-#sobre {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+ihisobre {
+padding: 430px 8px;
+}
+
+.titulo1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Alumni Sans SC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
+    margin-top: 70px;
+}
+
+.texto-sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
 }
 
 @media (max-width: 768px) {
     .logo {
-        font-size: 35px;
+        font-size: 30px;
         top: 30px;
         left: 20px;
     }
@@ -98,12 +119,32 @@ button:hover {
 
 @media (max-width: 480px) {
     .logo {
-        font-size: 28px;
-        top: 20px;
+        font-size: 25px;
+        top: 200px;
         left: 15px;
     }
+
+    .titulo1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Alumni Sans SC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
+    margin-top: 70px;
+}
+
+.texto-sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
     
     .hero-banner {
-        padding: 160px 8px;
+        padding: 370px 8px;
     }
 }
