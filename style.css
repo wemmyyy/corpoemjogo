@@ -78,13 +78,10 @@ button:hover {
 }
 
 .sobre{
-    padding: 50px 8px;
+    padding: 5px 1px;
 }
 
 .titulo1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: "Alumni Sans SC", sans-serif;
     font-optical-sizing: auto;
     font-weight: 900;
@@ -93,11 +90,17 @@ button:hover {
     margin-top: 70px;
 }
 
-.texto-sobre{
-    display: flex; 
-    justify-content: center;
+.container-sobre {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin: 60px;
+    justify-content: center;
+}
+
+.texto-sobre {
+    display: flex;
+    flex-direction: column;
+    margin: 1px 60px;
     font-size: 22px;
     font-family: "Afacad", sans-serif;
     font-optical-sizing: auto;
@@ -105,14 +108,58 @@ button:hover {
     font-style: normal;
 }
 
+.texto-sobre p {
+    margin-bottom: 100px;       
+}
+
 .hero-ods{
-    background-color: red;
+    background-color: #eeebe5;
+    padding: 150px 20px;
 }
 
 .titulo2{
-    display: flex;
-    justify-content: ;
+    font-family: "Alumni Sans SC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
+    margin-top: 70px;
 }
+
+.texto-ods{
+    font-size: 22px;
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ods{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.img-ods{
+    margin-top: 20px;
+    flex: 0 0 auto;
+}
+
+.position{
+    flex: 1;
+}
+
+.img-ods, img{
+    width: 550px;
+    height: auto;
+    display: block;
+}
+
+
+
 @media (max-width: 768px) {
     .logo {
         font-size: 30px;
