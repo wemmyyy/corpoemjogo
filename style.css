@@ -16,9 +16,25 @@ body {
 
 header { 
     display: flex; 
-    padding: 35px 8px; 
+    padding: 0px 10px; 
     background-color: #254C73; 
 } 
+
+.titulo-header{
+    font-family: "Alumni Sans SC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
+    color: #EAEAEA; 
+    margin-left: 15px;
+}
+
+.hero-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .hero-container {
     position: relative;
@@ -144,7 +160,7 @@ button:hover {
 }
 
 .img-ods{
-    margin-top: 20px;
+    margin-top: 5px;
     flex: 0 0 auto;
 }
 
@@ -157,6 +173,8 @@ button:hover {
     height: auto;
     display: block;
 }
+
+
 
 
 
