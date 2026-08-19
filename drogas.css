@@ -1,0 +1,71 @@
+
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header { 
+    display: flex; 
+    padding: 25px 16px; 
+    background-color: #254C73; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+} 
+
+.titulo-header{
+    font-family: "Alumni Sans SC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 25px;
+    color: #EAEAEA; 
+    margin-left: 15px;
+}
+
+
+.hero-container {
+    position: sticky;
+    width: 100%;
+    margin-top: 70px;
+}
+
+
+.hero-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.titulo-header h3 {
+    margin: 0;
+    line-height: 1;
+}
+
+.menu{
+    display: flex;
+    margin-right: 15px;
+    gap: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: #EAEAEA;
+    gap: 15px;
+    font-family: "Amaranth", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+li{
+    list-style: none;
+}
+
+.hero-banner{
+    background-image: url(img/consequencia-das-drogas.webp);
+}
