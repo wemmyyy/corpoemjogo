@@ -93,7 +93,7 @@ a{
     padding-left: 50px;
     box-sizing: border-box;
 
-    font-family: "BBH Bartle", sans-serif;
+    font-family: "Alumni Sans SC", sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 50px;
@@ -107,16 +107,10 @@ a{
   }
   
   .card {
-    width: 90%;
-    max-width: 1100px;
-    min-height: 500px;
+    width: 1500px;
+    height: 550px;
 
-    margin: 30px auto;
-    padding: 28px;
-
-    display: flex;
-    align-items: center;
-    gap: 40px;
+    margin: 60px auto;
 
     background-color: #f1f1f1;
     border-radius: 10px;
@@ -126,19 +120,112 @@ a{
 
     box-sizing: border-box;
 
-     font-family: "Amaranth", sans-serif;
+    font-family: "Amaranth", sans-serif;
     font-weight: 400;
     font-style: normal;
     
 }
 
+.container-card{
+    display: flex;
+
+    gap: 50px;
+
+}
+
+.titulo-depressivos, img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.titulo-depressivos, h2{
+    color: #3B3B3B;
+
+    font-family: "Alumni Sans SC", sans-serif;
+    font-style: normal;
+    font-size: 50px;
+
+    text-align: end;
+    justify-content: end;
+    align-items: end;
+
+    padding-right: 40px;
+}
+
+.texto-depressivos{
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 30px;
+
+    text-align: justify;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #3B3B3B;
+
+    padding-top: 90px;
+    padding-left: 40px;
+}
+
+  .card-2{
+    width: 1500px;
+    height: 550px;
+
+    margin: 60px auto;
+
+    background-color: #f1f1f1;
+    border-radius: 10px;
 
 
+    box-shadow: 10px 12px 0px #999;
 
+    box-sizing: border-box;
 
-
-
-
-
+    font-family: "Amaranth", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     
-  
+}
+
+.titulo-estimulantes, h2{
+    text-align: start;
+    justify-content: flex-start;
+    align-items: start;
+
+    color: #3B3B3B;
+
+    font-family: "Alumni Sans SC", sans-serif;
+    font-style: normal;
+    font-size: 50px;
+
+    padding-left: 40px;
+}
+
+.container-card2{
+    display: flex;
+    gap: 50px;
+}
+
+.texto-estimulantes{
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 30px;
+
+    text-align: justify;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #3B3B3B;
+
+    padding-top: 90px;
+    padding-right: 40px;
+}
