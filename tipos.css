@@ -1,7 +1,13 @@
-body{
+* {
+    box-sizing: border-box;
+}
+
+body {
     display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 header { 
@@ -14,27 +20,8 @@ header {
     width: 100%;
     z-index: 1000;
     box-sizing: border-box;
-} 
-
-.titulo-header{
-    font-family: "Alumni Sans SC", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 25px;
-    color: #EAEAEA; 
-    margin-left: 15px;
 }
-
-
-.hero-container {
-    position: sticky;
-    width: 100%;
-    margin-top: 70px;
-}
-
-
-.hero-menu{
+.hero-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,190 +29,162 @@ header {
 }
 
 .titulo-header h3 {
+    font-family: "Alumni Sans SC", sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    color: #EAEAEA;
     margin: 0;
     line-height: 1;
 }
 
-.menu{
+.menu {
     display: flex;
-    margin-right: 15px;
     gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-li{
+li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: #EAEAEA;
-    text-decoration: none;
-    color: #EAEAEA;
-    gap: 15px;
     font-family: "Amaranth", sans-serif;
     font-weight: 400;
-    font-style: normal;
+    font-size: 16px;
+    transition: opacity 0.2s;
 }
 
-  .hero-banner {
-    min-height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/ChatGPT\ Image\ 24\ de\ ago.\ de\ 2026\,\ 14_48_20.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100VH;
-    width: 100VW;
-  }
+a:hover {
+    opacity: 0.8;
+}
 
-  .container {
+
+.container {
     display: flex;
     width: 100%;
-    height: 100vh;
     flex-direction: column;
-  }
+    margin-top: 60px;
+}
 
-  .logo{
-     display: flex;
+.hero-banner {
+    min-height: calc(100vh - 60px);
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('img/ChatGPT Image 24 de ago. de 2026, 14_48_20.png') center/cover no-repeat;
+    display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100vh;
-    padding-left: 50px;
-    box-sizing: border-box;
+}
 
+.logo h1 {
     font-family: "Alumni Sans SC", sans-serif;
     font-weight: 300;
-    font-style: normal;
-    font-size: 50px;
+    font-size: clamp(35px, 8vw, 70px);
     color: #EAEAEA;
     letter-spacing: 4px;
-  }
+    text-align: center;
+    padding: 0 20px;
+}
 
-  .sobre-tipos{
-    min-height: 100%;
-    background-color: rgb(255, 255, 255);
-  }
-  
-  .card {
-    width: 1500px;
-    height: 550px;
+.sobre-tipos {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    margin: 60px auto;
 
+.card, .card-2 {
+    width: 90%;
+    max-width: 1300px;
+    min-height: auto;
+    margin: 30px 0;
+    padding: 40px;
     background-color: #f1f1f1;
     border-radius: 10px;
-
-
-    box-shadow: 10px 12px 0px #999;
-
-    box-sizing: border-box;
-
-    font-family: "Amaranth", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    
+    box-shadow: 6px 8px 15px rgba(0, 0, 0, 0.24);
 }
 
-.container-card{
+.container-card, .container-card2 {
     display: flex;
-
-    gap: 50px;
-
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
 }
 
-.titulo-depressivos, img{
-    width: 350px;
-    height: 350px;
+.texto-depressivos, .texto-estimulantes {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.texto-depressivos p, .texto-estimulantes p {
+    font-family: "Afacad", sans-serif;
+    font-size: clamp(18px, 2vw, 24px);
+    line-height: 1.5;
+    text-align: justify;
+    color: #3B3B3B;
+}
+
+.titulo-depressivos, .titulo-estimulantes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.titulo-depressivos h2, .titulo-estimulantes h2 {
+    color: #3B3B3B;
+    font-family: "Alumni Sans SC", sans-serif;
+    font-size: clamp(32px, 5vw, 48px);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.titulo-depressivos img, .titulo-estimulantes img {
+    width: 100%;
+    max-width: 300px;
+    height: 250px;
     object-fit: cover;
 }
 
-.titulo-depressivos, h2{
-    color: #3B3B3B;
+@media (max-width: 900px) {
+    header {
+        position: relative;
+    }
 
-    font-family: "Alumni Sans SC", sans-serif;
-    font-style: normal;
-    font-size: 50px;
+    .container {
+        margin-top: 0;
+    }
 
-    text-align: end;
-    justify-content: end;
-    align-items: end;
+    .hero-menu {
+        flex-direction: column;
+        gap: 15px;
+    }
 
-    padding-right: 40px;
-}
+    .menu {
+        justify-content: center;
+    }
 
-.texto-depressivos{
-    font-family: "Afacad", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+    .container-card {
+        flex-direction: column-reverse;
+    }
 
-    font-size: 30px;
+    .container-card2 {
+        flex-direction: column;
+    }
 
-    text-align: justify;
+    .card, .card-2 {
+        padding: 20px;
+    }
 
-    align-items: center;
-    justify-content: center;
-
-    color: #3B3B3B;
-
-    padding-top: 90px;
-    padding-left: 40px;
-}
-
-  .card-2{
-    width: 1500px;
-    height: 550px;
-
-    margin: 60px auto;
-
-    background-color: #f1f1f1;
-    border-radius: 10px;
-
-
-    box-shadow: 10px 12px 0px #999;
-
-    box-sizing: border-box;
-
-    font-family: "Amaranth", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    
-}
-
-.titulo-estimulantes, h2{
-    text-align: start;
-    justify-content: flex-start;
-    align-items: start;
-
-    color: #3B3B3B;
-
-    font-family: "Alumni Sans SC", sans-serif;
-    font-style: normal;
-    font-size: 50px;
-
-    padding-left: 40px;
-}
-
-.container-card2{
-    display: flex;
-    gap: 50px;
-}
-
-.texto-estimulantes{
-    font-family: "Afacad", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-
-    font-size: 30px;
-
-    text-align: justify;
-
-    align-items: center;
-    justify-content: center;
-
-    color: #3B3B3B;
-
-    padding-top: 90px;
-    padding-right: 40px;
+    .texto-depressivos p, .texto-estimulantes p {
+        text-align: left;
+    }
 }
