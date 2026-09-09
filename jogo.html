@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="jogo.css">
+    <title>Jogo</title>
+</head>
+<body>
+    <header>
+        <div class="hero-menu" id="HOME">
+            <div class="titulo-header">
+                <h3>corpo em jogo</h3>
+            </div>
+
+            <div>
+                <li class="menu">
+                    <a href="index.html"> HOME </a>
+                    <a href="index.html#sobre"> SOBRE </a>
+                    <a href="#ODS"> ODS </a>
+                    <a href="esporte.html"> COMO O ESPORTE AJUDA?</a>
+                    <a href="drogas.html"> DROGAS </a>
+                    <a href="">RELATOS</a>
+                    <a href="">AJUDA</a>
+                    <a href="jogo.html">JOGO</a>
+                </li>
+            </div>    
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero-banner">
+            <div class="btn-start">
+                <a href="#jogo">
+                    <button type="button" class="btn-start-game"> START </button>
+                </a>
+            </div>
+        </section>
+
+        <section class="sobre-jogo" id="jogo">
+            <div class="card-container">
+                <div class="card" id="card-principal">
+                    <div class="card-container" id="area-jogo">
+                        <h1 class="texto-pergunta" id="pergunta-principal">
+                            Seu time acabou de ganhar um campeonato e vocês vão a uma festa para comemorar.
+                            Durante a festa, algumas pessoas oferecem uma substância para você.
+                        </h1>
+                    </div>
+
+                    <div class="card-container2" id="opcoes">
+                        <div class="card1" id="conteudo1" onclick="escolher(0)">
+                            <h1 class="pergunta">
+                                Recusar e continuar comemorando com seus colegas do time.
+                            </h1>
+                        </div>
+
+                        <div class="card2" id="conteudo2" onclick="escolher(1)">
+                            <h1 class="pergunta">
+                                Ficar com seus amigos de confiança e aproveitar a comemoração de outras formas.
+                            </h1>
+                        </div>
+
+                        <div class="card3" id="conteudo3" onclick="escolher(2)">
+                            <h1 class="pergunta">
+                                Ficar na festa sem participar, mas continuar próximo de quem está oferecendo.
+                            </h1>
+                        </div>
+
+                        <div class="card4" id="conteudo4" onclick="escolher(3)">
+                            <h1 class="pergunta">
+                                Aceitar apenas para não ficar de fora do grupo.
+                            </h1>
+                        </div>
+
+                    </div>
+
+                    <div class="card-container2" id="area-progresso">
+                        <div class="progresso">
+                            <div 
+                                class="progresso-barra" 
+                                id="barra" 
+                                style="width: 0%;">
+                            </div>
+                        </div>
+
+                        <p id="texto">Etapa 0 de 5</p>
+
+                        <div id="conteudo5"></div>
+                    </div>
+
+                    <div id="resultado" class="resultado">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="jogo.js"></script>
+</body>
+</html>

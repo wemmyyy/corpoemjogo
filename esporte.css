@@ -9,7 +9,9 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 header { 
     display: flex; 
     padding: 25px 16px; 
@@ -58,14 +60,6 @@ header {
     gap: 15px;
 }
 
-a{
-    text-decoration: none;
-    color: #EAEAEA;
-    gap: 15px;
-    font-family: "Amaranth", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
 li{
     list-style: none;
@@ -98,7 +92,7 @@ a{
     flex-direction: column;
   }
 
-.logo{
+.logoo{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,10 +104,11 @@ a{
     font-family: "BBH Bartle", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 50px;
+    font-size: 110px;
     color: #EAEAEA;
     letter-spacing: 4px;
 }
+
 
 .sobre-esporte{
     width: 100%;
@@ -129,7 +124,7 @@ a{
     font-weight: 900;
     font-style: normal;
     font-size: 20px;
-    margin-top: 20px;
+
 
     text-align: center;
 }
