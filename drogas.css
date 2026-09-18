@@ -1,10 +1,17 @@
-
-body{
-    display: flex;
-    margin: 0;
-    padding: 0;
+* {
+    box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
 header { 
     display: flex; 
     padding: 25px 16px; 
@@ -15,7 +22,7 @@ header {
     width: 100%;
     z-index: 1000;
     box-sizing: border-box;
-} 
+}
 
 .titulo-header{
     font-family: "Alumni Sans SC", sans-serif;
@@ -53,7 +60,14 @@ header {
     gap: 15px;
 }
 
+
+li{
+    list-style: none;
+}
+
 a{
+    text-decoration: none;
+    color: #EAEAEA;
     text-decoration: none;
     color: #EAEAEA;
     gap: 15px;
@@ -62,10 +76,497 @@ a{
     font-style: normal;
 }
 
-li{
-    list-style: none;
+.logo {
+    color: #ffffff;
+
+    font-size: 22px;
+    font-weight: 900;
+
+    letter-spacing: 2px;
+
+    white-space: nowrap;
 }
 
-.hero-banner{
-    background-image: url(img/consequencia-das-drogas.webp);
+
+ .hero{
+    height: calc(100vh - 76px); 
+    width: 100%;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    background: #4c4d52;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+  .hero-banner {
+    min-height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.459)), url('img/capa.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+.logoo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding-left: 50px;
+    box-sizing: border-box;
+
+    font-family: "BBH Bartle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 110px;
+    color: #EAEAEA;
+    letter-spacing: 4px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+  }
+
+.hero-conteudo {
+     position: relative;
+    z-index: 2;
+    text-align: center; 
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-conteudo span {
+   font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #ffffff 
+}
+
+.hero h1 {
+    font-size: clamp(45px, 10vw, 120px); 
+    line-height: 0.95;
+    letter-spacing: 7px;
+    font-weight: 900;
+    margin-top: 15px;
+    color: #ffffff !important;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 20px auto 0 auto; 
+    max-width: 550px;
+}
+
+
+h2 {
+    font-size: 60px;
+    font-family: "Alumni Sans SC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.title{
+    font-family: "Alumni Sans SC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.central {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.sobre {
+    max-width: 1050px;
+
+    margin: auto;
+
+    padding: 105px 0;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.texto p {
+    line-height: 1.85;
+
+    color: #000000;
+
+    margin-bottom: 12px;
+
+    display: flex;
+    text-align: justify;
+
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+}
+
+.imagem {
+    padding: 12px;
+}
+
+.imagem img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.tipos {
+    max-width: 1050px;
+    margin: auto;
+    padding: 20px 0 110px;
+    position: relative;
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.text{
+        font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.titulo-secao h2 {
+    font-size: 32px;
+}
+
+
+.conteudo-tipos {
+    width: 72%;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.droga {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    gap: 30px;
+    align-items: center;
+    background: white;
+    padding: 12px;
+    border-radius: 15px;
+    box-shadow: 10px 8px 15px rgba(0, 0, 0, 0.24);
+    min-height: 190px;
+}
+
+.droga2 {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    gap: 30px;
+    align-items: center;
+    background: white;
+    padding: 12px;
+    border-radius: 15px;
+    box-shadow: 6px 8px 15px rgba(0, 0, 0, 0.24);
+    width: 1050px;
+    height: 270px;
+    margin-top: 20px;
+}
+
+
+.droga2.invertida {
+    grid-template-columns: 1fr 190px;
+}
+
+
+.imagem-droga {
+    height: 165px;
+    overflow: hidden;
+}
+
+.imagem-droga img {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+}
+
+.texto-droga {
+    padding: 8px 15px;
+}
+
+.texto-droga h3 {
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: #14255e;
+    margin-bottom: 12px;
+
+    font-family: "Alumni Sans SC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.texto-droga p {
+    text-align: justify;
+
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.estimulantes {
+    position: absolute;
+
+    right: 0;
+
+    top: 95px;
+
+    width: 25%;
+
+    background: white;
+
+    padding: 24px;
+
+    border-left: 5px solid #496789;
+
+    box-shadow:
+        0 10px 35px rgba(43, 37, 77, 0.08);
+}
+
+.estimulantes h2 {
+    font-size: 19px;
+}
+
+.estimulantes img {
+    width: 100%;
+
+    height: 160px;
+
+    object-fit: cover;
+}
+
+.estimulantes p {
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    color: #77748a;
+
+    margin-top: 15px;
+}
+
+.classificacao {
+    max-width: 1050px;
+
+    margin: auto;
+
+    padding: 100px 0;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 110px;
+
+    align-items: start;
+}
+
+.classificacao h2 {
+    font-size: 30px;
+}
+
+
+.caixa {
+    background: white;
+
+    border-left: 5px solid #477aaa;
+
+    padding: 23px;
+
+    margin-top: 22px;
+
+    box-shadow:
+        0 7px 25px rgba(43, 37, 77, 0.06);
+}
+
+.caixa h3 {
+    font-size: 16px;
+
+    color: #1c3780;
+
+    margin-bottom: 9px;
+}
+
+.caixa p {
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    color: #000000;
+}
+
+
+.imagem-classificacao img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+}
+
+.prevencao {
+    background: #2a485c;
+
+    color: white;
+
+    padding: 85px 8%;
+
+    text-align: center;
+}
+
+.prevencao span {
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    color: #a2dbe5;
+
+    font-weight: 800;
+}
+
+.prevencao h2 {
+    font-size: clamp(32px, 5vw, 55px);
+
+    margin: 12px auto 18px;
+
+    max-width: 850px;
+}
+
+.prevencao p {
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #ddd8ea;
+
+    line-height: 1.8;
+}
+
+footer {
+    background: #458aaa;
+
+    color: white;
+
+    padding: 30px 7%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 12px;
+}
+
+footer strong {
+    letter-spacing: 2px;
+}
+
+footer span {
+    color: #f3f2f8;
+}
+
+@media (max-width: 900px) {
+
+    .header {
+        padding: 0 5%;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .hero {
+        margin: 0;
+
+        height: 560px;
+    }
+
+    .sobre,
+    .classificacao {
+
+        grid-template-columns: 1fr;
+
+        width: 88%;
+
+        gap: 45px;
+    }
+
+    .tipos {
+        width: 88%;
+    }
+
+    .conteudo-tipos {
+        width: 100%;
+    }
+
+    .estimulantes {
+        position: static;
+
+        width: 100%;
+
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    nav {
+        display: none;
+    }
+
+    .hero-conteudo {
+        left: 8%;
+    }
+
+    .hero h1 {
+        font-size: 68px;
+
+        letter-spacing: 3px;
+    }
+
+    .sobre {
+        padding: 70px 0;
+    }
+
+    .droga,
+    .droga.invertida {
+
+        grid-template-columns: 1fr;
+    }
+
+    .imagem-droga {
+        height: 210px;
+    }
+
+    .classificacao {
+        padding: 70px 0;
+    }
+
+    footer {
+        flex-direction: column;
+
+        gap: 8px;
+    }
 }

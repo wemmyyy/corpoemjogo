@@ -1,0 +1,183 @@
+ body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    padding: 25px 16px;
+    background-color: #254C73;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.titulo-header {
+    font-family: "Alumni Sans SC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 25px;
+    color: #EAEAEA;
+    margin-left: 15px;
+}
+
+
+.hero-container {
+    position: sticky;
+    width: 100%;
+    margin-top: 70px;
+}
+
+
+.hero-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.titulo-header h3 {
+    margin: 0;
+    line-height: 1;
+}
+
+.menu {
+    display: flex;
+    margin-right: 15px;
+    gap: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #EAEAEA;
+    gap: 15px;
+    font-family: "Amaranth", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #EAEAEA;
+    text-decoration: none;
+    color: #EAEAEA;
+    gap: 15px;
+    font-family: "Amaranth", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hero-banner {
+    min-height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/oferecer-suporte-emocional-2-1024x684.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding-left: 50px;
+    box-sizing: border-box;
+    font-family: "BBH Bartle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: #EAEAEA;
+    letter-spacing: 4px;
+}
+
+.ajuda {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+
+.card {
+    width: 250px;
+    min-height: 680px;
+    background: white;
+    border: 1px solid #bdbdbd;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.icone {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.card h2 {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: bold;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.card h3 {
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.card p {
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.mapa {
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #bdbdbd;
+}

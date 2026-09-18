@@ -9,7 +9,9 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 header { 
     display: flex; 
     padding: 25px 16px; 
@@ -21,7 +23,26 @@ header {
     z-index: 1000;
     box-sizing: border-box;
 }
-.hero-menu {
+
+.titulo-header{
+    font-family: "Alumni Sans SC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 25px;
+    color: #EAEAEA; 
+    margin-left: 15px;
+}
+
+
+.hero-container {
+    position: sticky;
+    width: 100%;
+    margin-top: 70px;
+}
+
+
+.hero-menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,65 +50,65 @@ header {
 }
 
 .titulo-header h3 {
-    font-family: "Alumni Sans SC", sans-serif;
-    font-weight: 900;
-    font-size: 28px;
-    color: #EAEAEA;
     margin: 0;
     line-height: 1;
 }
 
-.menu {
+.menu{
     display: flex;
+    margin-right: 15px;
     gap: 15px;
-    flex-wrap: wrap;
-    align-items: center;
 }
 
-li {
+
+li{
     list-style: none;
 }
 
-a {
+a{
     text-decoration: none;
     color: #EAEAEA;
+    text-decoration: none;
+    color: #EAEAEA;
+    gap: 15px;
     font-family: "Amaranth", sans-serif;
     font-weight: 400;
-    font-size: 16px;
-    transition: opacity 0.2s;
+    font-style: normal;
 }
 
-a:hover {
-    opacity: 0.8;
-}
+  .hero-banner {
+    min-height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/ChatGPT\ Image\ 24\ de\ ago.\ de\ 2026\,\ 14_48_20.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
+  }
 
 .container {
     display: flex;
     width: 100%;
+    height: 100vh;
     flex-direction: column;
-    margin-top: 60px;
-}
+  }
 
-.hero-banner {
-    min-height: calc(100vh - 60px);
-    width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-                url('img/ChatGPT Image 24 de ago. de 2026, 14_48_20.png') center/cover no-repeat;
+.logoo{
     display: flex;
     align-items: center;
-    justify-content: center;
-}
+    padding-left: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
 
-.logo h1 {
-    font-family: "Alumni Sans SC", sans-serif;
-    font-weight: 300;
-    font-size: clamp(35px, 8vw, 70px);
+    font-family: "BBH Bartle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 110px;
     color: #EAEAEA;
     letter-spacing: 4px;
-    text-align: center;
-    padding: 0 20px;
 }
+
 
 .sobre-tipos {
     width: 100%;
@@ -96,10 +117,11 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 40px;
 }
 
 
-.card, .card-2 {
+.card, .card-2,.card-3{
     width: 90%;
     max-width: 1300px;
     min-height: auto;
@@ -108,30 +130,31 @@ a:hover {
     background-color: #f1f1f1;
     border-radius: 10px;
     box-shadow: 6px 8px 15px rgba(0, 0, 0, 0.24);
+    
 }
 
-.container-card, .container-card2 {
+.container-card, .container-card2,.container-card3{
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
 }
 
-.texto-depressivos, .texto-estimulantes {
+.texto-depressivos, .texto-estimulantes,.titulo-pertubadoras {
     flex: 1;
     display: flex;
     align-items: center;
 }
 
-.texto-depressivos p, .texto-estimulantes p {
+.texto-depressivos p, .texto-estimulantes p,.texto-pertubadoras p{
     font-family: "Afacad", sans-serif;
-    font-size: clamp(18px, 2vw, 24px);
+    font-size: 22px;
     line-height: 1.5;
     text-align: justify;
     color: #3B3B3B;
 }
 
-.titulo-depressivos, .titulo-estimulantes {
+.titulo-depressivos, .titulo-estimulantes,.titulo-pertubadoras, .title {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -139,15 +162,15 @@ a:hover {
     gap: 15px;
 }
 
-.titulo-depressivos h2, .titulo-estimulantes h2 {
+.titulo-depressivos h2, .titulo-estimulantes h2, .titulo-pertubadoras h2 {
     color: #3B3B3B;
     font-family: "Alumni Sans SC", sans-serif;
-    font-size: clamp(32px, 5vw, 48px);
+    font-size: 38px;
     text-transform: uppercase;
     text-align: center;
 }
 
-.titulo-depressivos img, .titulo-estimulantes img {
+.titulo-depressivos img, .titulo-estimulantes img,.titulo-pertubadoras img{
     width: 100%;
     max-width: 300px;
     height: 250px;
@@ -187,4 +210,75 @@ a:hover {
     .texto-depressivos p, .texto-estimulantes p {
         text-align: left;
     }
+}
+
+.card-classificacao {
+   width: 90%;
+    max-width: 1300px;
+    max-height: 13000px;
+    min-height: auto;
+    margin: 30px 0;
+    padding: 40px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 6px 8px 15px rgba(0, 0, 0, 0.24);
+    
+}
+
+
+.titulo-classificacao {
+    font-size: 22px;
+    margin: 0 0 30px 0;
+    font-weight: bold;
+    color: #3B3B3B;
+    font-family: "Alumni Sans SC", sans-serif;
+    font-size:40px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.container-classificacao {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.classificacao-item {
+    width: 5000%;
+    
+    
+}
+
+.classificacao-item h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #3B3B3B;
+    font-family: "Alumni Sans SC", sans-serif;
+    font-size: clamp(32px, 5vw, 48px);
+    text-transform: uppercase;
+    text-align: left;
+}
+
+
+.classificacao-item p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+        font-family: "Afacad", sans-serif;
+    font-size: clamp(18px, 2vw, 24px);
+    line-height: 1.5;
+    text-align: justify;
+    color: #3B3B3B;
+}
+
+.classificacao-item img {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    margin: 0 auto;
+    border: 1px solid #aaa;
+    background-color: white;
 }
