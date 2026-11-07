@@ -1,0 +1,413 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+header { 
+    display: flex; 
+    padding: 25px 16px; 
+    background-color: #254C73; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.titulo-header{
+    font-family: "Alumni Sans SC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 25px;
+    color: #EAEAEA; 
+    margin-left: 15px;
+}
+
+
+.hero-container {
+    position: sticky;
+    width: 100%;
+    margin-top: 70px;
+}
+
+
+.hero-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.titulo-header h3 {
+    margin: 0;
+    line-height: 1;
+}
+
+.menu{
+    display: flex;
+    margin-right: 15px;
+    gap: 15px;
+}
+
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #EAEAEA;
+    text-decoration: none;
+    color: #EAEAEA;
+    gap: 15px;
+    font-family: "Amaranth", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hero-container {
+    position: sticky;
+    width: 100%;
+    margin-top: 70px;
+    align-items: center;
+}
+
+.hero-banner { 
+    background: linear-gradient(135deg, #719EDE, #416490, #1f3853, #040b13); 
+    display: flex; 
+    min-height: 100vh; 
+    
+} 
+
+.hero-content { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    width: 100%; 
+} 
+
+.logo { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: center;
+    position: absolute; 
+    top: 150px; 
+    left: 50px; 
+    font-family: "BBH Bartle", sans-serif; 
+    font-weight: 400; 
+    font-style: normal; 
+    color: #EAEAEA; 
+    font-size: 50px; 
+    z-index: 10; 
+    letter-spacing: 4px
+} 
+
+.logo h1 {
+    margin: 0 0 20px 0;
+    line-height: 1.1;
+}
+
+.btn { 
+    display: flex; 
+} 
+
+button { 
+    height: 45px; 
+    width: 160px; 
+    border-radius: 20px; 
+    background-color: rgb(255, 255, 255); 
+    border: 2px solid #152b41; 
+    color: #152b41;
+    transition: background 0.3s;
+    font-family: "Amaranth", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #152b41;
+    color: #ffffff;
+    border: 2px solid #f0e9e9; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.sobre {
+    min-height: 100vh; 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 50px; 
+    box-sizing: border-box;
+}
+
+.titulo1 {
+    font-family: "Alumni Sans SC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.titulo1 h2 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.texto-sobre {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+}
+
+.texto-sobre p {
+    margin: 0 0 15px 0;
+    line-height: 1.5;
+}
+
+.texto-sobre p:last-child {
+    margin-bottom: 0;
+}
+.hero-ods {
+    background-color: #eeebe5;
+    min-height: 100vh; 
+    display: flex;       
+    align-items: center; 
+    justify-content: center; 
+    padding: 50px 0;
+}
+
+.titulo2 {
+    font-family: "Alumni Sans SC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
+    margin-top: 0; 
+    margin-bottom: 20px; 
+}
+
+.texto-ods {
+    font-size: 20px;
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    text-align: justify; 
+}
+
+.ods {
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px; 
+    gap: 80px;       
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.img-ods {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.position {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.img-ods img {
+    width: 100%;
+    max-width: 400px; 
+    height: auto;
+    border-radius: 8px;
+    margin-top: 0 !important; 
+}
+.titulo-header h3 {
+    margin: 0;
+    line-height: 1;
+}
+
+.menu{
+    display: flex;
+    margin-right: 15px;
+    gap: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: #EAEAEA;
+    gap: 15px;
+    font-family: "Amaranth", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+li{
+    list-style: none;
+}
+
+footer{
+    background-color: #254C73;
+    font-size: 22px;
+    color: white;
+}
+
+footer, h4{
+    font-size: 16px;
+    padding: 1px;
+
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 30px;
+        top: 30px;
+        left: 20px;
+    }
+    
+    .hero-banner {
+      min-height: 100vh; 
+    }
+    
+    button {
+        height: 40px;
+        width: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 25px;
+        top: 200px;
+        left: 15px;
+    }
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.titulo-header{
+    font-size: 20px;
+    margin-left: 0px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+}
+
+.titulo1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Alumni Sans SC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
+    margin-top: 70px;
+}
+
+.texto-sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    text-align: justify;
+    font-size: 19px;
+}
+
+.ods{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.position{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Alumni Sans SC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
+    margin-top: 70px;
+}
+
+.texto-ods{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    text-align: justify;
+    font-size: 19px;
+}
+
+.img-ods{
+    display: flex;
+}
+    
+    .hero-banner {
+       min-height: 100vh; 
+    }
+}
